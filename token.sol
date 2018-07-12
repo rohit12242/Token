@@ -29,9 +29,9 @@ library SafeMath {
   }
 
   function div(uint256 a, uint256 b) internal pure returns (uint256) {
-    // assert(b > 0); // Solidity automatically throws when dividing by 0
+    
     uint256 c = a / b;
-    // assert(a == b * c + a % b); // There is no case in which this doesn't hold
+    
     return c;
   }
 
@@ -47,8 +47,6 @@ library SafeMath {
   }
 }
 
-
-*********token code
 pragma solidity ^0.4.11;
 
 import './IERC20.sol';
@@ -57,7 +55,7 @@ contract FirstToken is IERC20 {
     
     using SafeMath for uint256;
     
-    uint public constant _totalSupply=1000000;
+    uint public constant _totalSupply=10000000;
 
     string public constant symbol = 'RAM';
     string public constant name = 'First Token';
